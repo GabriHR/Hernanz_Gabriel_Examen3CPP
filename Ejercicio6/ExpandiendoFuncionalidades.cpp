@@ -45,4 +45,21 @@ public:
 
 };
 
+int main() {
 
+    Environment env;
+
+
+    env.insert("a", 4);
+    env.insert("b", 38.2f);
+    env.insert("Nombre", std::string("Gabriel"));
+
+    cout << "Existe el valor 'a' " << (env.symbolExists("a") ? "Si" : "No") << endl;
+    cout << "Existe el valor 'c' " << (env.symbolExists("c") ? "Si" : "No") << endl;
+
+    env.removeSymbol("b");
+
+    cout << "Existe el valor 'b' despues de eliminarlo: " << (env.symbolExists("b") ? "Si" : "No") << endl;
+
+    return 0;
+}
