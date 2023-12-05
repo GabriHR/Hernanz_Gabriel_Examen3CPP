@@ -27,3 +27,30 @@ public:
     }
 
 };
+
+int main() {
+    Environment env;
+
+    if (env.insert("a", 4)) {
+        cout << "Simbolo 'a' insertado con exito." << endl;
+    } else {
+        cerr << "Error: Simbolo 'a' ya existe en la tabla." << endl;
+    }
+
+    if (env.insert("a", 16)) {
+        cout << "Simbolo 'a' insertado con exito." << endl;
+    } else {
+        cerr << "Error: Simbolo 'a' ya existe en la tabla." << endl;
+    }
+
+    if (env.insert("b", 22)) {
+        cout << "Simbolo 'b' insertado con exito." << endl;
+    } else {
+        cerr << "Error: Simbolo 'b' ya existe en la tabla." << endl;
+    }
+
+    cout << "El valor de a es: " << env.getSymbolValue("a") << endl;
+    cout << "El valor de b es: " << env.getSymbolValue("b") << endl;
+
+    return 0;
+}
