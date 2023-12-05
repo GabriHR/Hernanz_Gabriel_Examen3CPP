@@ -8,5 +8,5 @@ Enlace para acceder al repositorio con las respuestas --> https://github.com/Gab
 4. La opción correcta es la A) Convierte una cadena JSON en un objeto Variant. El método "from_json_string()" en la clase Variant se utiliza generalmente para convertir una cadena JSON en un objeto Variant.
 
 # FUENTES EXTERNAS DE INFORMACIÓN
-Chatgpt ---> https://chat.openai.com/c/88d3b7b5-8bd0-460a-b3e2-f3590c520cb0
-Git Hub Copilot
+1. Chatgpt ---> https://chat.openai.com/c/88d3b7b5-8bd0-460a-b3e2-f3590c520cb0
+2. Git Hub Copilot
