@@ -27,3 +27,17 @@ public:
 
 };
 
+int main() {
+
+    Environment env;
+
+
+    env.addSymbol("a", 4);
+    env.addSymbol("b", 16);
+
+    cout << "El valor de a es: " << env.getSymbolValue("a") << endl;
+    cout << "El valor de b es: " << env.getSymbolValue("b") << endl;
+    cout << "El valor de c es: " << env.getSymbolValue("c") << endl;
+
+    return 0;
+}
