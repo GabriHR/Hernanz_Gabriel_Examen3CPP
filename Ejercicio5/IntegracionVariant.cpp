@@ -31,3 +31,35 @@ public:
     }
 
 };
+
+int main() {
+
+    Environment env;
+
+
+    env.insert("a", 4);
+    env.insert("b", 22.6f);
+    env.insert("Nombre", std::string("Gabriel"));
+
+    auto resultX = env.lookup("a");
+    if (holds_alternative<int>(resultX)) {
+        cout << "El valor de a es: " << get<int>(resultX) << endl;
+    }
+
+    auto resultY = env.lookup("b");
+    if (holds_alternative<float>(resultY)) {
+        cout << "El valor de b es: " << get<float>(resultY) << endl;
+    }
+
+    auto resultName = env.lookup("Nombre");
+    if (holds_alternative<string>(resultName)) {
+        cout << "El valor de Nombre es: " << get<string>(resultName) << endl;
+    }
+
+    auto resultZ = env.lookup("c");
+    if (holds_alternative<int>(resultZ)) {
+        cout << "El valor de c es: " << get<int>(resultZ) << endl;
+    }
+
+    return 0;
+}
