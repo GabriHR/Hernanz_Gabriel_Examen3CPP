@@ -32,3 +32,22 @@ public:
 
 };
 
+int main() {
+    try {
+        Environment env;
+
+        env.insert("a", 4);
+        env.insert("b", 16);
+
+        std::cout << "El valor de a es: " << env.lookup("a") << std::endl;
+        std::cout << "El valor de b es: " << env.lookup("b") << std::endl;
+
+        env.insert("a", 4);
+
+        cout << "El valor de c es: " << env.lookup("c") << endl;
+    } catch (const exception& e) {
+        cerr << "Excepcion capturada: " << e.what() << endl;
+    }
+
+    return 0;
+}
